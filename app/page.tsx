@@ -1,8 +1,10 @@
+import GradientHero from "@/components/layout/Hero";
+
 export default function Home() {
   return (
     <div>
-      <div className="h-screen bg-[#fa005a] flex justify-center items-center">
-        <span className="text-7xl font-bold text-white">Learn With Ease.</span>
+      <div className="h-screen flex justify-center items-center">
+        <GradientHero />
       </div>
       <div className="h-screen bg-white">hai</div>
       <div className="h-screen bg-white">hai</div>
