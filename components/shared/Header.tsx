@@ -103,7 +103,7 @@ export default function Header1() {
 			initial="visible"
 			animate={showHeader ? 'visible' : 'hidden'}
 			style={{
-				backgroundColor: '#fa005a',
+				backgroundColor: 'white',
 				borderBottom: isScrolled ? '1px solid rgba(255, 255, 255, 0.1)' : 'none',
 				boxShadow: isScrolled ? '0 4px 20px rgba(0, 0, 0, 0.1)' : 'none',
 			}}
@@ -118,13 +118,13 @@ export default function Header1() {
 						maxSize={1}
 						particleDensity={100}
 						className="absolute inset-0 w-full h-full"
-						particleColor="#ffffff"
+						particleColor="#fa005a"
 						speed={0.5}
 					/>
 				</div>
 			)}
 			<div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-				<div className="flex h-16 items-center justify-between lg:h-30">
+				<div className="flex h-16 items-center justify-between lg:h-25">
 					<motion.div
 						className="flex items-center space-x-2"
 						whileHover={{ scale: 1.02 }}
@@ -133,11 +133,11 @@ export default function Header1() {
 						<Link href="/" className="flex items-center space-x-4">
 							<div className="relative">
 								<Image
-									src={"/assets/kinder_logo_white.svg"}
+									src={"/assets/kinder_logo_no_grad.svg"}
 									alt='logo'
 									width={180}
 									height={180}
-									className='mt-4 transition-all duration-300 ease-in-out w-24 h-24 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-45 xl:h-45'
+									className='mt-4 transition-all duration-300 ease-in-out w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36 lg:w-44 lg:h-44 xl:w-45 xl:h-45'
 									style={{
 										filter: 'drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1))',
 									}}
@@ -158,7 +158,7 @@ export default function Header1() {
 							>
 								<Link
 									href={item.href}
-									className="group flex items-center space-x-1 font-medium text-white transition-all duration-200 hover:text-white/80"
+									className="group flex items-center space-x-1 font-medium text-black transition-all duration-200 hover:text-black/80"
 								>
 									<span className="relative">
 										{item.name}
@@ -227,7 +227,7 @@ export default function Header1() {
 									exit={{ rotate: 90, opacity: 0 }}
 									transition={{ duration: 0.2 }}
 								>
-									<X className="h-6 w-6 text-white" />
+									<X className="h-6 w-6 text-black" />
 								</motion.div>
 							) : (
 								<motion.div

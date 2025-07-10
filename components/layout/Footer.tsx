@@ -11,8 +11,8 @@ export default function Footer() {
 							<img
 								src="/assets/kinder_logo_white.svg"
 								alt="logo"
-								height={180}
-								width={180}
+								height={150}
+								width={150}
 							/>
 						</div>
 						<p className="mb-4 text-white">Unlock you're english pottential with us.</p>
